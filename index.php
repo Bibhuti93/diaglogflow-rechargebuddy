@@ -8,10 +8,15 @@ if($method == 'POST'){
 $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 
-$equis = $json->result->parameters->any;
-$speech=$equis;
-//$speech="Hello Bibhuti";
-
+$user_num_input = $json->result->parameters->any;
+$user_num_input_len=strlen($user_num_input);
+  
+  if($user_num_input_len==10){
+    $speech=$equis;
+  }
+  else{
+    $speech="Invalid input. Please try again !";
+  }
 
 $response = new \stdClass();
 $response->speech = $speech;
