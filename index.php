@@ -18,7 +18,7 @@ $json = json_decode($requestBody);
 $equis = $json->result->parameters->equis;
 
 switch ($equis) {
-    case 'hi':
+    case 8:
         $speech = "Hi, Nice to meet you";
 
         break;
