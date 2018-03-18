@@ -8,9 +8,9 @@ if($method == 'POST'){
 $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 
-$equis = $json->result->parameters->equis;
-
-$speech="Hello Bibhuti";
+$equis = $json->result->parameters->any;
+$speech=$any;
+//$speech="Hello Bibhuti";
 
 
 $response = new \stdClass();
