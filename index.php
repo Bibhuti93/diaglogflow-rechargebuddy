@@ -12,7 +12,7 @@ $user_num_input = $json->result->parameters->any;
 $user_num_input_len=strlen($user_num_input);
   
   if($user_num_input_len==10){
-    $speech="Thanks ! \nNumber to be recharged is : "+$user_num_input;
+    $speech="Thanks ! \nNumber to be recharged is : ".$user_num_input;
   }
   else{
     $speech="Invalid input. Please try again !";
