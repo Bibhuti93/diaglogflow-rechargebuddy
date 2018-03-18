@@ -9,7 +9,7 @@ $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 
 $equis = $json->result->parameters->any;
-$speech=$any;
+$speech=$equis;
 //$speech="Hello Bibhuti";
 
 
